@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #0F1117;
+    background: radial-gradient(circle at top left, #1A1F2B, #0F1117 60%);
+
+}
+
+.calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calbox {
+    height: 100vh;
+    width: 50vw;
+    text-align: center;
+    padding-top: 10rem;
+    padding-right: 16rem;
+}
+
+.calbox h1 {
+    font-size: 5rem;
+    color: #ed793a;
+    padding-left: 2rem;
+}
+
+.calbox p {
+    font-size: 1.5rem;
+    border: 2px solid rgb(31, 30, 30);
+    display: inline-block;
+    background-color: #222223;
+    font-weight: 700;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    margin-top: 0.3rem;
+    color: white;
+}
+
+.maincal {
+    height: 100vh;
+    width: 50vw;
+}
+
+.maincal {
+    height: 70vmin;
+    width: 50vmin;
+    padding: 15px;
+    background: #1C1F26;
+    border-radius: 12px;
+}
+
+.maincal,
+.button {
+    padding: 15px;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.maincal .buttonbox {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.maincal,
+.buttonbox,
+.green {
+    color: green
+}
+
+#equalto {
+    background-color: #ed793a
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+
+    background: #111827;
+    /* dark background */
+    color: white;
+
+    border: none;
+    outline: none;
+
+    border-radius: 12px;
+    padding: 10px 14px;
+
+    font-size: 28px;
+    font-weight: 500;
+
+    text-align: right;
+    /* number on right side */
+
+    box-shadow: inset 3px 3px 6px #0e1114,
+        inset -3px -3px 6px #2a3036;
+
+    margin-bottom: 20px;
+}
